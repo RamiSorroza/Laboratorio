@@ -1,0 +1,335 @@
+header {
+  background-color: rgba(89, 172, 100, 0.8);
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  position: fixed;
+  margin-top: -32px;
+  margin-bottom: -10px;
+  width: 100%;
+  color: white;
+  padding: 10px;
+}
+
+.nosotros {
+  line-height: 1.5;
+}
+.content {
+  margin-top: 10px;
+  padding-top: 90px;
+  padding-bottom: 20px;
+}
+/* media queris */
+.resolucion {
+  width: 99%;
+  text-align: center;
+}
+/**celular**/
+
+@media (max-width: 767px) {
+  .desktop {
+    display: none;
+  }
+  .tablet {
+    display: none;
+  }
+}
+/**Tablet**/
+
+@media (min-width: 768px) and (max-width: 990px) {
+  .desktop {
+    display: none;
+  }
+  .movil {
+    display: none;
+  }
+}
+/**Escritorio**/
+
+@media (min-width: 991px) {
+  .tablet {
+    display: none;
+  }
+  .movil {
+    display: none;
+  }
+}
+#nav {
+  color: white;
+}
+/*Pie de Pagina*/
+.pie-pagina {
+  width: 100%;
+  background-color: rgb(89, 172, 100);
+}
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box h1 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 27px;
+}
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 2px;
+}
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: rgb(89, 172, 100);
+  text-align: center;
+  transition: all 300ms ease;
+  font-size: 30px;
+}
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: black;
+}
+.pie-pagina .grupo-2 {
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+.pie-pagina .grupo-2 small {
+  font-size: 17px;
+}
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+
+
+/* MODALES*/
+/* MODAL 1 */
+.boton-modal1{
+  padding: 40px;
+  background-color: #fff;
+}
+.boton-modal label1{
+  padding: 4px 12px;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.boton-modal1 label:hover{
+  background-color: rgb(89, 172, 100);
+}
+/*:::Fin Boton-Modal:::*/
+
+/*:::Ventana Modal:::*/
+#btn-modal1{
+  display: none;
+}
+.container-modal1{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0; left: 0;
+  background-color: rgba(144, 148, 150, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+#btn-modal1:checked ~ .container-modal1{
+  display: flex;
+}
+.content-modal1{
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.content-modal1 h2{
+  margin-bottom: 15px;
+}
+.content-modal1 p{
+  padding: 15px 0px;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+.content-modal1 .btn-cerrar1{
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+.content-modal1 .btn-cerrar1 label1{
+  padding: 7px 10px;
+  background-color: rgb(89, 172, 100);
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.content-modal1 .btn-cerrar1 label:hover{
+  background-color:#093813;
+}
+.cerrar-modal1{
+  width:100%;
+  height: 100vh;
+  position: absolute;
+  top:0; left: 0;
+  z-index: -1;
+}
+@media screen and (max-width:800px) {
+  .content-modal1{
+      width: 90%;
+  }
+}
+/*:::Fin Ventana Modal:::*/
+
+/*:::Ventana Modal 2:::*/
+#btn-modal2{
+  display: none;
+}
+.container-modal2{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0; left: 0;
+  background-color: rgba(144, 148, 150, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+#btn-modal2:checked ~ .container-modal2{
+  display: flex;
+}
+.content-modal2{
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.content-modal2 h2{
+  margin-bottom: 15px;
+}
+.content-modal2 p{
+  padding: 15px 0px;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+.content-modal2 .btn-cerrar2{
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+.content-modal2 .btn-cerrar2 label1{
+  padding: 7px 10px;
+  background-color: rgb(89, 172, 100);
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.content-modal2 .btn-cerrar2 label:hover{
+  background-color:#093813;
+}
+.cerrar-modal2{
+  width:100%;
+  height: 100vh;
+  position: absolute;
+  top:0; left: 0;
+  z-index: -1;
+}
+@media screen and (max-width:800px) {
+  .content-modal2{
+      width: 90%;
+  }
+}
+/*:::Fin Ventana Modal:::*/
+
+/*:::Ventana Modal 3:::*/
+#btn-modal3{
+  display: none;
+}
+.container-modal3{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0; left: 0;
+  background-color: rgba(144, 148, 150, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+#btn-modal3:checked ~ .container-modal3{
+  display: flex;
+}
+.content-modal3{
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.content-modal1 h3{
+  margin-bottom: 15px;
+}
+.content-modal3 p{
+  padding: 15px 0px;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+.content-modal3 .btn-cerrar3{
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+.content-modal3 .btn-cerrar3 label1{
+  padding: 7px 10px;
+  background-color: rgb(89, 172, 100);
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.content-modal3 .btn-cerrar3 label:hover{
+  background-color:#093813;
+}
+.cerrar-modal3{
+  width:100%;
+  height: 100vh;
+  position: absolute;
+  top:0; left: 0;
+  z-index: -1;
+}
+@media screen and (max-width:800px) {
+  .content-modal3{
+      width: 90%;
+  }
+}
+/*:::Fin Ventana Modal:::*/
